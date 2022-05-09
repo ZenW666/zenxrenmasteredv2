@@ -1,0 +1,46 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Zen X v2", "DarkTheme")
+
+
+--lock
+local Aimlock = Window:NewTab("Aimlock")
+local Section = Aimlock:NewSection("Lock")
+Section:NewButton("Aimlock(Q)", "be kimbladi", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZenW666/lock2/main/ZenXV2"))()
+--finished
+
+
+--combat
+local Combat = Window:NewTab("Combat")
+local Section = Combat:NewSection("Combat")
+Section:NewButton("Reach", "just say ur laggy", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZenW666/PenisW/main/reach"))()
+end)
+Section:NewButton("Toolreach", "just say ur laggy too", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZenW666/toolreach/main/ZenXV2"))()
+end)
+--finished
+
+
+--animation
+local Animation = Window:NewTab("Animation")
+local Section = Animation:NewSection("change ur animation here")
+Section:NewButton("Sneaky", "Be sneaky", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZenW666/ZenXV2/main/sneakyanim"))()
+end)
+--finished
+
+
+--GUisetting
+local Gui_Settings = Window:NewTab("Gui_Settings")
+local Section = Gui_Settings:NewSection("change ur keybind")
+Section:NewKeybind("Keybind", "toggle and closes ui", Enum.KeyCode.V, function()
+	Library:ToggleUI()
+end)
+--finished
+
+
+--cred
+local credits = Window:NewTab("credits")
+local Section = credits:NewSection("Creds to ZenK#5434")
+--al done
